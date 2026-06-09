@@ -1,12 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 
 metadata:
-  name: nginx-deployment
+  name: nginx-daemonset
   namespace: nginx
 
 spec:
-  replicas: 2
+  
   selector: 
     matchLabels:
       app: nginx

@@ -1,8 +1,8 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: ReplicaSet
 
 metadata:
-  name: nginx-deployment
+  name: nginx-replicaset
   namespace: nginx
 
 spec:
